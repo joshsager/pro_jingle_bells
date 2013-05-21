@@ -27,12 +27,12 @@ void draw(){
   currentTime++;
 
 
-  fill(255);
+  fill(100, 100, 100);
   rect(0,0,width,height);
   //text(redscore, 10, 60);
   //text(bluescore, 70,60);
   textFont(f,26);
-  fill(200,100,100);
+  fill(255,255,255);
   text("Goal = 10 items", 430, 100);
   text("Snowflake",30,100);
   text("Coal",980,100);
@@ -68,7 +68,7 @@ void timeout(){
   }else{
       pos=0;
     }
-    if(pos>10){println("gameover");
+    if(pos>20){println("gameover");
     gamestate = "over";
     noLoop();
     background(0);
