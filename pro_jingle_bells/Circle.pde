@@ -34,7 +34,6 @@ class Circle {
       noStroke();
       img = bad;
     }
-
     y+=speed;
     fill(col);
     ellipse(x, y, size, size);
